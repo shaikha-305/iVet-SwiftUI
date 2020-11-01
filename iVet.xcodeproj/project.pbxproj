@@ -56,9 +56,9 @@
 		1FCE1A54254E7B720079D6CD /* iVet */ = {
 			isa = PBXGroup;
 			children = (
+				1FCE1A69254E7C6E0079D6CD /* Views */,
 				1FCE1A55254E7B720079D6CD /* AppDelegate.swift */,
 				1FCE1A57254E7B720079D6CD /* SceneDelegate.swift */,
-				1FCE1A59254E7B720079D6CD /* ContentView.swift */,
 				1FCE1A5B254E7B740079D6CD /* Assets.xcassets */,
 				1FCE1A60254E7B740079D6CD /* LaunchScreen.storyboard */,
 				1FCE1A63254E7B740079D6CD /* Info.plist */,
@@ -73,6 +73,14 @@
 				1FCE1A5E254E7B740079D6CD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1FCE1A69254E7C6E0079D6CD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1FCE1A59254E7B720079D6CD /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
