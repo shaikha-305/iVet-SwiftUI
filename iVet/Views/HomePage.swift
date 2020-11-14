@@ -49,9 +49,11 @@ struct HomePage: View {
                     Spacer()
                   
                     Text("لا تملك حساب؟ انشئ حساب")
+                        .underline()
                         .font(.custom("Droid Arabic Kufi", size: 15))
                         .foregroundColor(Color(#colorLiteral(red: 0.9923661351, green: 0.5098340511, blue: 0.002265297808, alpha: 1)))
                         .padding(.leading, 5)
+                    
                     
                 }.padding(.trailing)
                     

@@ -16,35 +16,45 @@ struct SignIn: View {
             Image("SwiftUIsignIn2")
             .resizable()
                 .edgesIgnoringSafeArea(.all)
-            VStack{
-               
+            
+                VStack{
+                   
+                   Text("أهلاً بك..")
+                    .frame(width: 300, height: 120, alignment: .bottomTrailing)
+                    .font(.custom("Droid Arabic Kufi", size: 50))
+                    Spacer()
+                }.padding(.leading, 50)
                 
-            VStack(spacing: 25){
-//                Spacer()
-//                Spacer()
-//                VStack(spacing: 60){
-//                    Spacer()
-//                Text("البريد الالكتروني")
-//                Text("كلمة السر")
-//                }
+            
+            ZStack{
                 
+                VStack{
+                    
+                    Text("البريد الالكتروني")
+                        .frame(width: 300, height: 50, alignment: .bottomTrailing)
+                        .font(.custom("Droid Arabic Kufi", size: 16))
+                        .padding(.top, 44)
                     TextField("", text: $email)
-                .frame(width: 300, height: 40)
+                        .frame(width: 300, height: 40)
                         .textFieldStyle(PlainTextFieldStyle())
-                 .padding(.top, 50)
-                 
-                TextField("", text: $password)
-                     .frame(width: 300, height: 40)
-                .textFieldStyle(PlainTextFieldStyle())
-                    .padding(.top, 30)
-                Spacer()
-                VStack(spacing: 10){
-                 Text("البريد الالكتروني")
-                    .frame(width: 300, height: 30, alignment: .trailing)
-                    .padding(.top, 50)
-                Text("كلمة السر")
-                 .frame(width: 300, height: 230, alignment: .trailing)
+                    Text("كلمة السر")
+                        .frame(width: 300, height: 7, alignment: .trailing)
+                        .font(.custom("Droid Arabic Kufi", size: 16))
+                    .padding(.bottom, 20)
+                    TextField("", text: $password)
+                        .frame(width: 300, height: 40)
+                        .textFieldStyle(PlainTextFieldStyle())
+                        .padding(.bottom, 30)
+                   
                 }
+//                .padding(.top, 50)
+                }
+//            VStack{
+//                Text("هل نسيت كلمة المرور؟")
+//
+//            }
+            VStack{
+                Spacer()
                 HStack{
                     ZStack{
                         Circle()
@@ -57,15 +67,16 @@ struct SignIn: View {
                         Image("nextArrow")
                             .resizable()
                             .frame(width: 35, height: 25)
-                        
+
                     }
                     Spacer()
                 }.padding(.bottom, 50)
-            }.padding(.top, 30)
+            }
+            
         }
         }
     }
-}
+
 
 struct SignIn_Previews: PreviewProvider {
     static var previews: some View {
