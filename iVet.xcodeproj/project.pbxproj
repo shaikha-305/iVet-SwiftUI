@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		1FCE1A56254E7B720079D6CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE1A55254E7B720079D6CD /* AppDelegate.swift */; };
 		1FCE1A58254E7B720079D6CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE1A57254E7B720079D6CD /* SceneDelegate.swift */; };
-		1FCE1A5A254E7B720079D6CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE1A59254E7B720079D6CD /* ContentView.swift */; };
 		1FCE1A5C254E7B740079D6CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FCE1A5B254E7B740079D6CD /* Assets.xcassets */; };
 		1FCE1A5F254E7B740079D6CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FCE1A5E254E7B740079D6CD /* Preview Assets.xcassets */; };
 		1FCE1A62254E7B740079D6CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCE1A60254E7B740079D6CD /* LaunchScreen.storyboard */; };
+		1FCE1A6B254E7D2D0079D6CD /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE1A6A254E7D2D0079D6CD /* HomePage.swift */; };
+		1FEF14E5255AF3EB00CB72BB /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF14E4255AF3EB00CB72BB /* SignIn.swift */; };
+		1FEF14ED255AFBD000CB72BB /* DroidKufi-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FEF14EB255AFBD000CB72BB /* DroidKufi-Bold.ttf */; };
+		1FEF14EE255AFBD000CB72BB /* DroidKufi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FEF14EC255AFBD000CB72BB /* DroidKufi-Regular.ttf */; };
+		1FEF14F0255B059B00CB72BB /* Home page modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF14EF255B059B00CB72BB /* Home page modifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1FCE1A52254E7B720079D6CD /* iVet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iVet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FCE1A55254E7B720079D6CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FCE1A57254E7B720079D6CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1FCE1A59254E7B720079D6CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1FCE1A5B254E7B740079D6CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FCE1A5E254E7B740079D6CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1FCE1A61254E7B740079D6CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FCE1A63254E7B740079D6CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FCE1A6A254E7D2D0079D6CD /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		1FEF14E4255AF3EB00CB72BB /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		1FEF14EB255AFBD000CB72BB /* DroidKufi-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DroidKufi-Bold.ttf"; sourceTree = "<group>"; };
+		1FEF14EC255AFBD000CB72BB /* DroidKufi-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DroidKufi-Regular.ttf"; sourceTree = "<group>"; };
+		1FEF14EF255B059B00CB72BB /* Home page modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home page modifiers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 		1FCE1A54254E7B720079D6CD /* iVet */ = {
 			isa = PBXGroup;
 			children = (
+				1FEF14E6255AFAD800CB72BB /* Fonts */,
+				1FCE1A71254E8A7F0079D6CD /* Modifiers */,
 				1FCE1A69254E7C6E0079D6CD /* Views */,
 				1FCE1A55254E7B720079D6CD /* AppDelegate.swift */,
 				1FCE1A57254E7B720079D6CD /* SceneDelegate.swift */,
@@ -78,9 +88,35 @@
 		1FCE1A69254E7C6E0079D6CD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1FCE1A59254E7B720079D6CD /* ContentView.swift */,
+				1FCE1A6A254E7D2D0079D6CD /* HomePage.swift */,
+				1FEF14E3255AF3CB00CB72BB /* Sign in & Sign up */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		1FCE1A71254E8A7F0079D6CD /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				1FEF14EF255B059B00CB72BB /* Home page modifiers.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		1FEF14E3255AF3CB00CB72BB /* Sign in & Sign up */ = {
+			isa = PBXGroup;
+			children = (
+				1FEF14E4255AF3EB00CB72BB /* SignIn.swift */,
+			);
+			path = "Sign in & Sign up";
+			sourceTree = "<group>";
+		};
+		1FEF14E6255AFAD800CB72BB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1FEF14EB255AFBD000CB72BB /* DroidKufi-Bold.ttf */,
+				1FEF14EC255AFBD000CB72BB /* DroidKufi-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +178,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FCE1A62254E7B740079D6CD /* LaunchScreen.storyboard in Resources */,
+				1FEF14ED255AFBD000CB72BB /* DroidKufi-Bold.ttf in Resources */,
 				1FCE1A5F254E7B740079D6CD /* Preview Assets.xcassets in Resources */,
 				1FCE1A5C254E7B740079D6CD /* Assets.xcassets in Resources */,
+				1FEF14EE255AFBD000CB72BB /* DroidKufi-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,9 +192,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FEF14F0255B059B00CB72BB /* Home page modifiers.swift in Sources */,
 				1FCE1A56254E7B720079D6CD /* AppDelegate.swift in Sources */,
+				1FEF14E5255AF3EB00CB72BB /* SignIn.swift in Sources */,
+				1FCE1A6B254E7D2D0079D6CD /* HomePage.swift in Sources */,
 				1FCE1A58254E7B720079D6CD /* SceneDelegate.swift in Sources */,
-				1FCE1A5A254E7B720079D6CD /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
